@@ -6,6 +6,8 @@ Para instalar o syspet, basta seguir as instruções de git clone https://github
 ## INICIALIZAR
 Para inicializar o sistema, basta rodar o arquivo denominado 'syspet.py', os demais arquivos são de auxílio para este.
 
+Lembre-se de ter todos as bibliotecas utilizadas no programa para que este funcione adequadamente!
+
 ## RESALVAS
 <p>Por ser um código mais complexo eu acabei levando bastante tempo para encontrar soluções para diversos problemas que eu tive durante sua criação.</p>
 <p>Sendo assim, eu tentei de última hora atualizar/estilizar rapidamente o código para que fique mais robusto, porém nem todos os códigos e menus conseguiram ser atendidos.</p>
