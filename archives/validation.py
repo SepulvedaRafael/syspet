@@ -59,15 +59,6 @@ def iscelular(self):
         try:
             code = randint(100000, 999999)
             print(code)
-            cliente.messages.create(
-                from_="+12569523515",
-                to=f"+55{int(self)}",
-                body=f"""
-					Mensagem de confirmação
-					{code}
-				""",
-            )
-            print("Enviado com sucesso!")
             coderecebido = int(input("Code recebido: "))
             if coderecebido == code:
                 return True

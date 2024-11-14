@@ -1,7 +1,7 @@
 # SYSPET
 
 # INSTALATION
-Para instalar o syspet, basta dar o comando: git clone https://https://github.com/SepulvedaRafael/syspet.git
+Para instalar o syspet, basta seguir as instruções de GIT CLONE.
 
 # INICIALIZAR
-Para inicializar o sistema, basta rodar o arquivo denominado 'syspet.py'.
+Para inicializar o sistema, basta rodar o arquivo denominado 'syspet.py'
