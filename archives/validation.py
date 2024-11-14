@@ -56,8 +56,6 @@ def iscpf(self):
 def iscelular(self):
     self = str(self)
     if len(self) == 11:
-        cliente = Client(account_sid, auth_token)
-
         try:
             code = randint(100000, 999999)
             print(code)
