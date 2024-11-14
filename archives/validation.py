@@ -1,3 +1,6 @@
+# CELULAR
+from twilio.rest import Client
+
 # EMAIL
 import re
 import smtplib
@@ -53,9 +56,23 @@ def iscpf(self):
 def iscelular(self):
     self = str(self)
     if len(self) == 11:
+        account_sid = "ACa624bd6725dc418bb5bbb8279cb23e63"
+        auth_token = "89cc3e466d137ff7b8bae40cdcddfd21"
+
+        cliente = Client(account_sid, auth_token)
+
         try:
             code = randint(100000, 999999)
             print(code)
+            cliente.messages.create(
+                from_="+12569523515",
+                to=f"+55{int(self)}",
+                body=f"""
+					Mensagem de confirmação
+					{code}
+				""",
+            )
+            print("Enviado com sucesso!")
             coderecebido = int(input("Code recebido: "))
             if coderecebido == code:
                 return True
