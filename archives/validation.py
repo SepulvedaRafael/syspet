@@ -1,6 +1,3 @@
-# CELULAR
-from twilio.rest import Client
-
 # EMAIL
 import re
 import smtplib
