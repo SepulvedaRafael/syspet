@@ -56,9 +56,6 @@ def iscpf(self):
 def iscelular(self):
     self = str(self)
     if len(self) == 11:
-        account_sid = "ACa624bd6725dc418bb5bbb8279cb23e63"
-        auth_token = "89cc3e466d137ff7b8bae40cdcddfd21"
-
         cliente = Client(account_sid, auth_token)
 
         try:
