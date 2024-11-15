@@ -15,7 +15,7 @@ def clear():
 def menu_atendimentos():
     console = Console()
 
-    panel = Panel(Align('ATENDIMENTOS', align='center'), width=40, box=box.DOUBLE_EDGE, style='red')
+    panel = Panel(Align('ATENDIMENTOS', align='center'), width=60, box=box.DOUBLE_EDGE, style='bold red')
     console.print(panel)
 
 file_clients = os.getcwd().replace("\\", "/") + "/archives/data/clientes.csv"
@@ -38,7 +38,7 @@ def iniciar_atendimento():
                 console.print(f'[white b][{i + 1}][/] [red b]{nome_cliente} [{cpf_cliente}][/]')
             console.print(f"[white b][{i + 2}][/] [red b]Voltar[/]")
 
-            option_user = int(console.input('[red b]Insira sua opção: [/]'))
+            option_user = int(console.input('[white b]Insira sua opção: [/]'))
             clear()
             if option_user - 1 <= i:
                 nome_cliente, sexo_cliente, cpf_cliente, celular_cliente, email_celular, codigo_end_postal_cliente, endereco_cliente, bairro_cliente, complemento_cliente, cidade_cliente, estado_cliente = linhas[option_user - 1].split(";")
@@ -56,7 +56,7 @@ def iniciar_atendimento():
                                 console.print(f'[white b][{cont + 1}][/] [red b]{nome_pet}[/]')
                                 cont += 1
                         console.print(f'[white b][{cont + 1}][/] [red b]Voltar[/]')
-                        option_user = int(console.input('[red b]Insira sua opção: [/]'))
+                        option_user = int(console.input('[white b]Insira sua opção: [/]'))
                         clear()
                         if option_user <= cont:
                             for row in linhas:
@@ -71,7 +71,7 @@ def iniciar_atendimento():
                                     id_servico, descricao_servico, valor_servico, orientacao_servico = row.split(';')
                                     console.print(f'[white b][{i + 1}][/] [red b]{descricao_servico} [{valor_servico}][/]')
                                 console.print(f'[white b][{i + 2}][/] [red b]Voltar[/]')
-                                option_user = int(console.input('[red b]Insira sua opção: [/]'))
+                                option_user = int(console.input('[white b]Insira sua opção: [/]'))
                                 clear()
                                 if option_user - 1 <= i:
                                     id_servico, descricao_servico, valor_servico, orientacao_servico = linhas[option_user - 1].split(';')
@@ -81,7 +81,7 @@ def iniciar_atendimento():
                                     console.print(f'[white b][{options[2]}][/] [red b]{options[3]}[/]')
                                     console.print(f'[white b][{options[4]}][/] [red b]{options[5]}[/]')
                                     console.print(f'[white b]Valor:[/] [red b]{options[6]}[/]\n')
-                                    confirm = console.input('[red b]Para confirmar: SIM | Para negar: NÃO: [/]')
+                                    confirm = console.input('[white b]Para confirmar: SIM | Para negar: NÃO: [/]')
 
                                     if confirm.upper() == 'SIM':
                                         if os.path.exists(file_atendimentos):
@@ -99,25 +99,25 @@ def iniciar_atendimento():
                                     elif confirm == 'NÃO':
                                         continue
                                     else:
-                                        console.print('[red b]Tente novamente![/]\n')
+                                        console.print('[red b]\nTente novamente![/]', justify='center', width=60)
                                 elif option_user == i + 2:
                                     clear()
                                     break
 
                                 else:
-                                    console.print('[red b]Opção inválida! Tente novamente! [/]\n')
+                                    console.print('[red b]\nOpção inválida! Tente novamente! [/]', justify='center', width=60)
                         elif option_user == cont + 1:
                             clear()
                             break
 
                         else:
-                            console.print('[red b]Opção inválida! Tente novamente! [/]\n')
+                            console.print('[red b]\nOpção inválida! Tente novamente! [/]', justify='center', width=60)
             elif option_user == i + 2:
                 clear()
                 break
 
             else:
-                console.print('[red b]Opção inválida! Tente novamente! [/]\n')
+                console.print('[red b]\nOpção inválida! Tente novamente! [/]', justify='center', width=60)
 
 def agendar_atendimento():
     console = Console()
@@ -144,12 +144,12 @@ def agendar_atendimento():
                                 cont += 1
         console.print(f'[white b][{cont + 1}][/] [red b]Voltar[/]')
 
-        option_user = int(console.input('[red b]Insira sua opção: [/]'))
+        option_user = int(console.input('[white b]Insira sua opção: [/]'))
         clear()
         if option_user <= cont:
             while progress:
-                console.print('[white b]Dica: 11/11/2024 (Formato de data)[/]')
-                data_agendamento = console.input('[red b]Data de Agendamento: [/]')
+                console.print('[red b]Dica: 11/11/2024 (Formato de data)[/]')
+                data_agendamento = console.input('[white b]Data de Agendamento: [/]')
 
                 # Validação da data
                 if validation.isdata(data_agendamento):
@@ -171,10 +171,10 @@ def agendar_atendimento():
                             df.write(new_line)
                         progress = False
                         clear()
-                        console.print('[white b]O agendamento foi realizado com sucesso! [/]\n')
+                        console.print('[white b]\nO agendamento foi realizado com sucesso! [/]', justify='center', width=60)
                 else:
                     clear()
-                    console.print('[red b]Data de Agendamento inválida! Tente novamente! [/]\n')
+                    console.print('[red b]\nData de Agendamento inválida! Tente novamente! [/]', justify='center', width=60)
 
         elif option_user == cont + 1:
             clear()
@@ -182,7 +182,7 @@ def agendar_atendimento():
 
         else:
             clear()
-            console.print('[red b]Opção inválida! Tente novamente! [/]\n')
+            console.print('[red b]\nOpção inválida! Tente novamente! [/]', justify='center', width=60)
 
 def remarcar_atendimento():
     console = Console()
@@ -194,7 +194,7 @@ def remarcar_atendimento():
             if(data_agendamento == ''):
                 progress = False
                 clear()
-                console.print(f'[white b]Não há um agendamento para o pet com ID: {id_pet_atendimentos}. [/]\n')
+                console.print(f'[white b]Não há um agendamento para o pet com ID: {id_pet_atendimentos}. [/]\n', justify='center', width=60)
                 break
             else:
                 progress = True
@@ -220,12 +220,12 @@ def remarcar_atendimento():
                                     cont += 1
             console.print(f'[white b][{cont + 1}][/] [red b]Voltar [/]\n')
 
-            option_user = int(console.input('[red b]Insira sua opção: [/]'))
+            option_user = int(console.input('[white b]Insira sua opção: [/]'))
             clear()
             if option_user <= cont:
                 while progress:
-                    console.print('[white b]Dica: 11/11/2024 (Formato de data)[/]')
-                    data_remarcamento = console.input('[red b]Nova Data: [/]')
+                    console.print('[red b]Dica: 11/11/2024 (Formato de data)[/]')
+                    data_remarcamento = console.input('[white b]Nova Data: [/]')
 
                     # Validação da data
                     if validation.isdata(data_remarcamento):
@@ -247,10 +247,10 @@ def remarcar_atendimento():
                                 df.write(new_line)
                             progress = False
                             clear()
-                            console.print('[white b]O reagendamento foi realizado com sucesso! [/]\n')
+                            console.print('[white b]\nO reagendamento foi realizado com sucesso! [/]', justify='center', width=60)
                     else:
                         clear()
-                        console.print('[red b]Data de Agendamento inválida! Tente novamente! [/]\n')
+                        console.print('[red b]\nData de Agendamento inválida! Tente novamente! [/]', justify='center', width=60)
 
             elif option_user == cont + 1:
                 clear()
@@ -258,7 +258,7 @@ def remarcar_atendimento():
 
             else:
                 clear()
-                console.print('[red b]Opção inválida! Tente novamente! [/]\n')
+                console.print('[red b]\nOpção inválida! Tente novamente! [/]', justify='center', width=60)
 
 def cancelar_atendimento():
     console = Console()
@@ -284,7 +284,7 @@ def cancelar_atendimento():
                                 cont += 1
         console.print(f'[white b][{cont + 1}][/] [red b]Voltar[/] \n')
 
-        option_user = int(console.input('[red b]Insira sua opção: [/]'))
+        option_user = int(console.input('[white b]Insira sua opção: [/]'))
         clear()
         if option_user <= cont:
             with open(file_atendimentos, 'r') as df:
@@ -305,7 +305,7 @@ def cancelar_atendimento():
                     df.write(new_line)
                 progress = False
                 clear()
-                console.print('[white b]O atendimento foi cancelado com sucesso! [/]\n')
+                console.print('[white b]\nO atendimento foi cancelado com sucesso! [/]', justify='center', width=60)
 
         elif option_user == cont + 1:
             clear()
@@ -313,7 +313,7 @@ def cancelar_atendimento():
 
         else:
             clear()
-            console.print('[red b]Opção inválida! Tente novamente! [/]\n')
+            console.print('[red b]\nOpção inválida! Tente novamente! [/]', justify='center', width=60)
 
 def concluir_atendimento():
     console = Console()
@@ -339,7 +339,7 @@ def concluir_atendimento():
                                 cont += 1
         console.print(f'[white b][{cont + 1}][/] [red b]Voltar[/]\n')
 
-        option_user = int(console.input('[red b]Insira sua opção: [/]'))
+        option_user = int(console.input('[white b]Insira sua opção: [/]'))
         clear()
         if option_user <= cont:
             with open(file_atendimentos, 'r') as df:
@@ -362,7 +362,7 @@ def concluir_atendimento():
                     df.write(new_line)
                 progress = False
                 clear()
-                console.print('[white b]O atendimento foi efetivado com sucesso! [/]\n')
+                console.print('[white b]\nO atendimento foi efetivado com sucesso! [/]', justify='center', width=60)
 
         elif option_user == cont + 1:
             clear()
@@ -370,7 +370,12 @@ def concluir_atendimento():
 
         else:
             clear()
-            console.print('[red b]Opção inválida! Tente novamente! [/]\n ')
+            console.print('[red b]\nOpção inválida! Tente novamente! [/]', justify='center', width=60)
+
+def total_consulta(self):
+    console = Console()
+    panel = Panel(Align(self, align='center'), width=60, box=box.DOUBLE_EDGE, style='white')
+    console.print(panel)
 
 def atendimentos(self):
     console = Console()
@@ -395,9 +400,8 @@ def atendimentos(self):
                                     if(id_pet == id_pet_atendimentos):
                                         console.print(f'[white b][{cont + 1}][/] [red b]Data: {data_agendamento} - {id_pet_atendimentos} {nome_pet}[/]')
                                         cont += 1
-                print('')
-                console.print(f'[white b]TOTAL DE ATENDIMENTOS AGENDADOS: {cont}[/]')
-                print('')
+                total = f'TOTAL DE ATENDIMENTOS AGENDADOS: {cont}'
+                total_consulta(total)
                 progress = False
 
         case 2:
@@ -420,9 +424,8 @@ def atendimentos(self):
                                     if(id_pet == id_pet_atendimentos):
                                         console.print(f'[white b][{cont + 1}][/] [red b]Data: {data_agendamento} - {id_pet_atendimentos} {nome_pet}[/]')
                                         cont += 1
-                print('')
-                console.print(f'[white b]TOTAL DE ATENDIMENTOS CANCELADOS: {cont}[/]')
-                print('')
+                total = f'TOTAL DE ATENDIMENTOS CANCELADOS: {cont}'
+                total_consulta(total)
                 progress = False
 
         case 3:
@@ -445,9 +448,8 @@ def atendimentos(self):
                                     if(id_pet == id_pet_atendimentos):
                                         console.print(f'[white b][{cont + 1}][/] [red b]Data: {data_agendamento} - {id_pet_atendimentos} {nome_pet}[/]')
                                         cont += 1
-                print('')
-                console.print(f'[white b]TOTAL DE ATENDIMENTOS EFETIVADOS: {cont}[/]')
-                print('')
+                total = f'TOTAL DE ATENDIMENTOS EFETIVADOS: {cont}'
+                total_consulta(total)
                 progress = False
 
         case 4:
@@ -470,7 +472,6 @@ def atendimentos(self):
                                     if(id_pet == id_pet_atendimentos):
                                         console.print(f'[white b][{cont + 1}][/] [red b]{id_pet_atendimentos} {nome_pet}[/]')
                                         cont += 1
-                print('')
-                console.print(f'[white b]TOTAL DE ATENDIMENTOS SEM AGENDAMENTO: {cont}[/]')
-                print('')
+                total = f'TOTAL DE ATENDIMENTOS SEM AGENDAMENTO: {cont}'
+                total_consulta(total)
                 progress = False

@@ -1,0 +1,10 @@
+1 - Vacinação Bovina - 120 - Realização de vacinação obrigatória para prevenção de doenças como brucelose e febre aftosa. Recomendado anualmente.
+2 - Corte de Unhas Caninas - 50 - O corte de unhas é essencial para evitar o desconforto e prevenir lesões. Realize a cada 1 a 2 meses, dependendo do desgaste natural.
+3 - Tosa Higiênica Felina - 70 - A tosa higiênica é recomendada para gatos de pelagem longa. Ajuda a evitar acúmulo de pelos e facilita a limpeza da região genital e anal.
+4 - Check-up Anual de Saúde Canina - 200 - O check-up inclui exames gerais, como testes de sangue, urina, vacinas e avaliação veterinária. Recomenda-se anualmente, especialmente para cães de idade avançada.
+5 - Exame de Raio-X Felino - 150 - Indicado para investigar problemas ósseos, respiratórios ou outros sinais de doenças. Deve ser realizado conforme orientação veterinária após avaliação clínica.
+6 - Banho e Tosa Completa Canina - 80 - Banho com xampu adequado para a pele do pet, seguido de tosa (se necessário) e secagem. Ideal para cães com pelagem longa ou com tendência a alergias cutâneas.
+7 - Alojamento Temporário Bovino - 50 - Serviço de alojamento para bovinos em fazendas ou propriedades rurais. Ideal para rebanhos que precisam de cuidados temporários ou em período de transporte.
+8 - Clipping de Asas em Ave - 30 - O clipping de asas impede o voo de aves, sendo recomendado para segurança e bem-estar. Deve ser feito periodicamente para evitar que as penas cresçam excessivamente.
+9 - Desparasitação Interna Canina - 90 - A desparasitação interna é essencial para eliminar vermes e parasitas intestinais. Deve ser feita a cada 6 meses, conforme orientação veterinária.
+10 - Consultoria de Alimentação Felina - 100 - Avaliação nutricional do gato, com recomendações sobre rações, petiscos e cuidados alimentares específicos para a saúde e longevidade do felino. Deve ser feita ao menos uma vez ao ano.

@@ -31,6 +31,7 @@ def iscpf(self):
     self = str(self)
     if len(self) == 11:
         if self.count(self[0]) == 11:
+            print('Error 1')
             return False
         else:
             first_digit = 0
@@ -44,12 +45,20 @@ def iscpf(self):
                 second_digit += int(self[i]) * (11 - i)
             second_digit = second_digit * 10 % 11
 
+            if(first_digit == 10 or first_digit == 11):
+                first_digit = 0
+
+            if(second_digit == 10 or second_digit == 11):
+                second_digit = 0
+
             # Validação final
             if first_digit == int(self[9]) and second_digit == int(self[10]):
                 return True
             else:
+                print('Error 2')
                 return False
     else:
+        print('Error 3')
         return False
 
 

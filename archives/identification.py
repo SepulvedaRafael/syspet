@@ -8,24 +8,23 @@ from unidecode import unidecode
 # RICH
 from rich.console import Console
 from rich.table import Table, box
-from rich.align import Align
 
 def welcome(self):
-    table = Table(title=' ', box=box.DOUBLE_EDGE, style='red')
+    table = Table(title=' ', box=box.DOUBLE_EDGE, style='red', width=60)
 
     table.add_column('WELCOME TO SYSPET', justify='center', style='bold red', header_style='bold red')
 
     if(self == 1):
-        table.add_row(Align('Opção inválida! Tente novamente! \n', align='center'))
-    table.add_row(Align('[1] Logar no Syspet', align='left'))
-    table.add_row(Align('[2] Registrar-se', align='left'))
-    table.add_row(Align('[3] Sair', align='left'))
+        table.add_row('Opção inválida! Tente novamente! \n')
+    table.add_row('[white b][1][/] Logar no Syspet')
+    table.add_row('[white b][2][/] Registrar-se')
+    table.add_row('[white b][3][/] Sair')
 
     console = Console()
     console.print(table)
 
 def menu_register(self):
-    table = Table(title=' ', box=box.DOUBLE_EDGE, style='red')
+    table = Table(title=' ', box=box.DOUBLE_EDGE, style='red', width=60)
 
     table.add_column('REGISTER TO SYSPET', justify='center', style='bold red', header_style='bold red')
 
@@ -35,7 +34,7 @@ def menu_register(self):
     console.print(table)
 
 def menu_login(self):
-    table = Table(title=' ', box=box.DOUBLE_EDGE, style='red')
+    table = Table(title=' ', box=box.DOUBLE_EDGE, style='red', width=60)
 
     table.add_column('LOGIN TO SYSPET', justify='center', style='bold red', header_style='bold red')
 
@@ -46,7 +45,7 @@ def menu_login(self):
 
 def finalizar_programa():
     if(option == 3):
-        table = Table(title=' ', box=box.DOUBLE_EDGE, style='red')
+        table = Table(title=' ', box=box.DOUBLE_EDGE, style='red', width=60)
 
         table.add_column('SYSPET AGRADECE', justify='center', style='bold red', header_style='bold red')
 
@@ -68,7 +67,7 @@ def auth():
     tip = 'Dica: 12345678912'
     menu_login(tip)
     while progress:
-        cpf = console.input("[red b]CPF do User: [/]")
+        cpf = console.input("[white b]CPF do User: [/]")
 
         # Validação do cpf
         if validation.iscpf(cpf):
@@ -84,7 +83,7 @@ def auth():
                         tip = 'Informe a senha cadastrada'
                         menu_login(tip)
                         while progress:
-                            senha = console.input('[red b]Senha do User: [/]')
+                            senha = console.input('[white b]Senha do User: [/]')
 
                             # Validação da senha
                             if validation.issenha(senha):
@@ -104,7 +103,6 @@ def auth():
             error = "CPF inválido! Tente novamente."
             menu_register(error)
 
-
 def register():
     progress = True
     # ALTERAR TUDO PARA CSV
@@ -117,7 +115,7 @@ def register():
     tip = "Dica: 12345678912"
     menu_register(tip)
     while progress:
-        cpf = console.input("[red b]CPF do User: [/]")
+        cpf = console.input("[white b]CPF do User: [/]")
 
         # Validação do CPF
         if validation.iscpf(cpf):
@@ -139,7 +137,7 @@ Deve ter, no mínimo, um número.
 Deve ter, no mínimo, um caracetere especial [!#@$%&].'''
                     menu_register(tip)
                     while progress:
-                        senha = console.input('[red b]Senha do User: [/]')
+                        senha = console.input('[white b]Senha do User: [/]')
 
                         # Validação da senha
                         if validation.issenha(senha):
@@ -163,7 +161,7 @@ welcome(0)
 while True:
     # Menu de entrada
     console = Console()
-    option = int(console.input('[red b]Insira sua opção:[/] '))
+    option = int(console.input('[white b]Insira sua opção:[/] '))
     clear()
 
     progress = True
@@ -186,6 +184,7 @@ while True:
                 df.write("Administrador\n")
             else:
                 df.write("Usuario\n")
+        welcome(0)
 
     elif option == 3:
         break

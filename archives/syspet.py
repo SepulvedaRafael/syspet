@@ -7,51 +7,50 @@ import atendimento
 # RICH
 from rich.console import Console
 from rich.table import Table, box
-from rich.align import Align
 
 def menu_geral(self):
-    table = Table(title=' ', box=box.DOUBLE_EDGE, style='red')
+    table = Table(title=' ', box=box.DOUBLE_EDGE, style='red', width=60)
 
     table.add_column('SYSPET', justify='center', style='bold red', header_style='bold red')
 
     if(self == 1):
-        table.add_row(Align('Opção inválida! Tente novamente! \n', align='center'))
-    table.add_row(Align('[1] Cadastros', align='left'))
-    table.add_row(Align('[2] Atendimentos', align='left'))
-    table.add_row(Align('[3] Consultas/Relatórios', align='left'))
-    table.add_row(Align('[4] Sair', align='left'))
+        table.add_row('Opção inválida! Tente novamente! \n')
+    table.add_row('[white b][1][/] Cadastros')
+    table.add_row('[white b][2][/] Atendimentos')
+    table.add_row('[white b][3][/] Consultas/Relatórios')
+    table.add_row('[white b][4][/] Sair')
 
     console = Console()
     console.print(table)
 
 def menu_cadastros(self):
-    table = Table(title=' ', box=box.DOUBLE_EDGE, style='red')
+    table = Table(title=' ', box=box.DOUBLE_EDGE, style='red', width=60)
 
     table.add_column('CADASTROS', justify='center', style='bold red', header_style='bold red')
 
     if(self == 1):
-        table.add_row(Align('Opção inválida! Tente novamente! \n', align='center'))
-    table.add_row(Align('[1] Usuários', align='left'))
-    table.add_row(Align('[2] Clientes', align='left'))
-    table.add_row(Align('[3] Pets', align='left'))
-    table.add_row(Align('[4] Serviços', align='left'))
-    table.add_row(Align('[5] Voltar', align='left'))
+        table.add_row('Opção inválida! Tente novamente! \n')
+    table.add_row('[white b][1][/] Usuários')
+    table.add_row('[white b][2][/] Clientes')
+    table.add_row('[white b][3][/] Pets')
+    table.add_row('[white b][4][/] Serviços')
+    table.add_row('[white b][5][/] Voltar')
 
     console = Console()
     console.print(table)
 
 def menu_crud(self, aux):
-    table = Table(title=' ', box=box.DOUBLE_EDGE, style='red')
+    table = Table(title=' ', box=box.DOUBLE_EDGE, style='red', width=60)
     match self:
         case 1:
             table.add_column('USUARIOS', justify='center', style='bold red', header_style='bold red')
             if(aux == 1):
-                table.add_row(Align('Opção inválida! Tente novamente! \n', align='center'))
-            table.add_row(Align("[1] Cadastrar", align='left'))
-            table.add_row(Align("[2] Atualizar", align='left'))
-            table.add_row(Align("[3] Apagar", align='left'))
-            table.add_row(Align("[4] Consultar", align='left'))
-            table.add_row(Align("[5] Voltar", align='left'))
+                table.add_row('Opção inválida! Tente novamente! \n')
+            table.add_row("[white b][1][/] Cadastrar")
+            table.add_row("[white b][2][/] Atualizar")
+            table.add_row("[white b][3][/] Apagar")
+            table.add_row("[white b][4][/] Consultar")
+            table.add_row("[white b][5][/] Voltar")
 
             console = Console()
             console.print(table)
@@ -59,36 +58,36 @@ def menu_crud(self, aux):
         case 2:
             table.add_column('CLIENTES', justify='center', style='bold red', header_style='bold red')
             if(aux == 1):
-                table.add_row(Align('Opção inválida! Tente novamente! \n', align='center'))
-            table.add_row(Align("[1] Cadastrar", align='left'))
-            table.add_row(Align("[2] Atualizar", align='left'))
-            table.add_row(Align("[3] Apagar", align='left'))
-            table.add_row(Align("[4] Consultar", align='left'))
-            table.add_row(Align("[5] Voltar", align='left'))
+                table.add_row('Opção inválida! Tente novamente! \n')
+            table.add_row("[white b][1][/] Cadastrar")
+            table.add_row("[white b][2][/] Atualizar")
+            table.add_row("[white b][3][/] Apagar")
+            table.add_row("[white b][4][/] Consultar")
+            table.add_row("[white b][5][/] Voltar")
 
             console = Console()
             console.print(table)
         case 3:
             table.add_column('PETS', justify='center', style='bold red', header_style='bold red')
             if(aux == 1):
-                table.add_row(Align('Opção inválida! Tente novamente! \n', align='center'))
-            table.add_row(Align("[1] Cadastrar", align='left'))
-            table.add_row(Align("[2] Atualizar", align='left'))
-            table.add_row(Align("[3] Apagar", align='left'))
-            table.add_row(Align("[4] Consultar", align='left'))
-            table.add_row(Align("[5] Voltar", align='left'))
+                table.add_row('Opção inválida! Tente novamente! \n')
+            table.add_row("[white b][1][/] Cadastrar")
+            table.add_row("[white b][2][/] Atualizar")
+            table.add_row("[white b][3][/] Apagar")
+            table.add_row("[white b][4][/] Consultar")
+            table.add_row("[white b][5][/] Voltar")
 
             console = Console()
             console.print(table)
         case 4:
             table.add_column('SERVIÇOS', justify='center', style='bold red', header_style='bold red')
             if(aux == 1):
-                table.add_row(Align('Opção inválida! Tente novamente! \n', align='center'))
-            table.add_row(Align("[1] Cadastrar", align='left'))
-            table.add_row(Align("[2] Atualizar", align='left'))
-            table.add_row(Align("[3] Apagar", align='left'))
-            table.add_row(Align("[4] Consultar", align='left'))
-            table.add_row(Align("[5] Voltar", align='left'))
+                table.add_row('Opção inválida! Tente novamente! \n')
+            table.add_row("[white b][1][/] Cadastrar")
+            table.add_row("[white b][2][/] Atualizar")
+            table.add_row("[white b][3][/] Apagar")
+            table.add_row("[white b][4][/] Consultar")
+            table.add_row("[white b][5][/] Voltar")
 
             console = Console()
             console.print(table)
@@ -96,40 +95,40 @@ def menu_crud(self, aux):
             console.print("[white b]O argumento não é válido! Tente novamente! [/]\n")
 
 def menu_atendimentos(self):
-    table = Table(title=' ', box=box.DOUBLE_EDGE, style='red')
+    table = Table(title=' ', box=box.DOUBLE_EDGE, style='red', width=60)
 
     table.add_column('ATENDIMENTOS', justify='center', style='bold red', header_style='bold red')
 
     if(self == 1):
-        table.add_row(Align('Opção inválida! Tente novamente! \n', align='center'))
-    table.add_row(Align("[1] Iniciar Atendimento", align='left'))
-    table.add_row(Align("[2] Agendar", align='left'))
-    table.add_row(Align("[3] Remarcar", align='left'))
-    table.add_row(Align("[4] Cancelar", align='left'))
-    table.add_row(Align("[5] Concluir Atendimento", align='left'))
-    table.add_row(Align("[6] Voltar", align='left'))
+        table.add_row('Opção inválida! Tente novamente! \n')
+    table.add_row("[white b][1][/] Iniciar Atendimento")
+    table.add_row("[white b][2][/] Agendar")
+    table.add_row("[white b][3][/] Remarcar")
+    table.add_row("[white b][4][/] Cancelar")
+    table.add_row("[white b][5][/] Concluir Atendimento")
+    table.add_row("[white b][6][/] Voltar")
 
     console = Console()
     console.print(table)
 
 def menu_visao_atendimentos(self):
-    table = Table(title=' ', box=box.DOUBLE_EDGE, style='red')
+    table = Table(title=' ', box=box.DOUBLE_EDGE, style='red', width=60)
 
     table.add_column('CONSULTAS', justify='center', style='bold red', header_style='bold red')
 
     if(self == 1):
-        table.add_row(Align('Opção inválida! Tente novamente! \n', align='center'))
-    table.add_row(Align('[1] Agendado', align='left'))
-    table.add_row(Align('[2] Cancelado', align='left'))
-    table.add_row(Align('[3] Efetivado', align='left'))
-    table.add_row(Align('[4] Sem agendamento', align='left'))
-    table.add_row(Align('[5] Voltar', align='left'))
+        table.add_row('Opção inválida! Tente novamente! \n')
+    table.add_row('[white b][1][/] Agendado')
+    table.add_row('[white b][2][/] Cancelado')
+    table.add_row('[white b][3][/] Efetivado')
+    table.add_row('[white b][4][/] Sem agendamento')
+    table.add_row('[white b][5][/] Voltar')
 
     console = Console()
     console.print(table)
 
 def finalizar_programa():
-    table = Table(title=' ', box=box.DOUBLE_EDGE, style='red')
+    table = Table(title=' ', box=box.DOUBLE_EDGE, style='red', width=60)
 
     table.add_column('SYSPET AGRADECE', justify='center', style='bold red', header_style='bold red')
 
@@ -158,20 +157,20 @@ try:
         clear()
         menu_geral(0)
         while True:
-            option = int(console.input("[red b]Insira uma opção: [/]"))
+            option = int(console.input("[white b]Insira uma opção: [/]"))
             clear()
 
             progress = True
             if option == 1:
                 menu_cadastros(0)
                 while progress:
-                    option = int(console.input("[red b]Insira sua opção: [/]"))
+                    option = int(console.input("[white b]Insira sua opção: [/]"))
                     clear()
 
                     if option == 1:
                         menu_crud(1, 0)
                         while progress:
-                            option = int(console.input("[red b]Insira sua opção: [/]"))
+                            option = int(console.input("[white b]Insira sua opção: [/]"))
                             clear()
 
                             if option == 1:
@@ -191,7 +190,7 @@ try:
                                 menu_crud(1, 0)
 
                             elif option == 5:
-                                menu_crud(1, 0)
+                                menu_cadastros(0)
                                 break
 
                             else:
@@ -201,7 +200,7 @@ try:
                     elif option == 2:
                         menu_crud(2, 0)
                         while progress:
-                            option = int(console.input("[red b]Insira sua opção: [/]"))
+                            option = int(console.input("[white b]Insira sua opção: [/]"))
                             clear()
 
                             if option == 1:
@@ -221,7 +220,7 @@ try:
                                 menu_crud(2, 0)
 
                             elif option == 5:
-                                menu_crud(2, 0)
+                                menu_cadastros(0)
                                 break
 
                             else:
@@ -231,7 +230,7 @@ try:
                     elif option == 3:
                         menu_crud(3, 0)
                         while progress:
-                            option = int(console.input("[red b]Insira sua opção: [/]"))
+                            option = int(console.input("[white b]Insira sua opção: [/]"))
                             clear()
 
                             if option == 1:
@@ -251,7 +250,7 @@ try:
                                 menu_crud(3, 0)
 
                             elif option == 5:
-                                menu_crud(3, 0)
+                                menu_cadastros(0)
                                 break
 
                             else:
@@ -261,7 +260,7 @@ try:
                     elif option == 4:
                         menu_crud(4, 0)
                         while progress:
-                            option = int(console.input("[red b]Insira sua opção: [/]"))
+                            option = int(console.input("[white b]Insira sua opção: [/]"))
                             clear()
 
                             if option == 1:
@@ -281,7 +280,7 @@ try:
                                 menu_crud(4, 0)
 
                             elif option == 5:
-                                menu_crud(4, 0)
+                                menu_cadastros(0)
                                 break
 
                             else:
@@ -300,23 +299,28 @@ try:
             elif option == 2:
                 menu_atendimentos(0)
                 while progress:
-                    option = int(console.input('[red b]Insira sua opção: [/]'))
+                    option = int(console.input('[white b]Insira sua opção: [/]'))
                     clear()
 
                     if option == 1:
                         atendimento.iniciar_atendimento()
+                        menu_atendimentos(0)
 
                     elif option == 2:
                         atendimento.agendar_atendimento()
+                        menu_atendimentos(0)
 
                     elif option == 3:
                         atendimento.remarcar_atendimento()
+                        menu_atendimentos(0)
 
                     elif option == 4:
                         atendimento.cancelar_atendimento()
+                        menu_atendimentos(0)
 
                     elif option == 5:
                         atendimento.concluir_atendimento()
+                        menu_atendimentos(0)
 
                     elif option == 6:
                         clear()
@@ -330,11 +334,12 @@ try:
             elif option == 3:
                 menu_visao_atendimentos(0)
                 while progress:
-                    option = int(console.input('[red b]Insira sua opção: [/]'))
+                    option = int(console.input('[white b]Insira sua opção: [/]'))
                     clear()
 
                     if option <= 4:
                         atendimento.atendimentos(option)
+                        menu_visao_atendimentos(0)
 
                     elif option == 5:
                         clear()
