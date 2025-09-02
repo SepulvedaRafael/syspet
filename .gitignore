@@ -1,7 +1,3 @@
-__pycache__
-users.csv
-atendimentos.csv
-clientes.csv
-servicos.csv
-pets.csv
-test
+src/__pycache__
+data/__pycache__
+.env

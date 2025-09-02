@@ -1,0 +1,11 @@
+id_servico;descricao_servico;valor_servico;orientacao_servico
+1;Vacinacao Bovina;120;Realizacao de vacinacao obrigatoria para prevencao de doencas como brucelose e febre aftosa. Recomendado anualmente.
+2;Corte de Unhas Caninas;50;O corte de unhas e essencial para evitar o desconforto e prevenir lesoes. Realize a cada 1 a 2 meses, dependendo do desgaste natural.
+3;Tosa Higienica Felina;70;A tosa higienica e recomendada para gatos de pelagem longa. Ajuda a evitar acumulo de pelos e facilita a limpeza da regiao genital e anal.
+4;Check-up Anual de Saude Canina;200;O check-up inclui exames gerais, como testes de sangue, urina, vacinas e avaliacao veterinaria. Recomenda-se anualmente, especialmente para caes de idade avancada.
+5;Exame de Raio-X Felino;150;Indicado para investigar problemas osseos, respiratorios ou outros sinais de doencas. Deve ser realizado conforme orientacao veterinaria apos avaliacao clinica.
+6;Banho e Tosa Completa Canina;80;Banho com xampu adequado para a pele do pet, seguido de tosa (se necessario) e secagem. Ideal para caes com pelagem longa ou com tendencia a alergias cutaneas.
+7;Alojamento Temporario Bovino;50;Servico de alojamento para bovinos em fazendas ou propriedades rurais. Ideal para rebanhos que precisam de cuidados temporarios ou em periodo de transporte.
+8;Clipping de Asas em Ave;30;O clipping de asas impede o voo de aves, sendo recomendado para seguranca e bem-estar. Deve ser feito periodicamente para evitar que as penas crescam excessivamente.
+9;Desparasitacao Interna Canina;90;A desparasitacao interna e essencial para eliminar vermes e parasitas intestinais. Deve ser feita a cada 6 meses, conforme orientacao veterinaria.
+10;Consultoria de Alimentacao Felina;100;Avaliacao nutricional do gato, com recomendacoes sobre racoes, petiscos e cuidados alimentares especificos para a saude e longevidade do felino. Deve ser feita ao menos uma vez ao ano.

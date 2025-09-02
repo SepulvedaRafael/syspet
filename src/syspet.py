@@ -140,11 +140,11 @@ def finalizar_programa():
 def clear():
     os.system("cls")
 
-file_clients = os.getcwd().replace("\\", "/") + "/archives/data/clientes.csv"
-file_users = os.getcwd().replace("\\", "/") + "/archives/data/users.csv"
-file_services = os.getcwd().replace("\\", "/") + "/archives/data/servicos.csv"
-file_pets = os.getcwd().replace("\\", "/") + "/archives/data/pets.csv"
-file_atendimentos = os.getcwd().replace("\\", "/") + "/archives/data/atendimentos.csv"
+file_clients = os.getcwd().replace("\\", "/") + "/data/clientes.csv"
+file_users = os.getcwd().replace("\\", "/") + "/data/users.csv"
+file_services = os.getcwd().replace("\\", "/") + "/data/servicos.csv"
+file_pets = os.getcwd().replace("\\", "/") + "/data/pets.csv"
+file_atendimentos = os.getcwd().replace("\\", "/") + "/data/atendimentos.csv"
 
 if identification.finalizar_programa() == False:
     pass

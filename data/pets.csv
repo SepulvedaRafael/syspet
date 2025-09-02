@@ -1,0 +1,11 @@
+id_pet;nome_pet;categoria_pet;raca_pet;data_nascimento_pet;cpf_dono_pet
+1;Rex;Canino;Labrador;15/03/2019;18638315171
+2;Simba;Felino;Maine Coon;01/10/2018;99352710134
+3;Mel;Canino;Beagle;22/07/2020;08850436181
+4;Tom;Felino;Siames;30/01/2017;78839905197
+5;Bolt;Canino;Poodle;12/04/2021;18638315171
+6;Luna;Felino;Persa;02/09/2019;78839905197
+7;Pipo;Ave;Papagaio;18/11/2015;76762538100
+8;Trix;Canino;Border Collie;06/06/2020;76762538100
+9;Thor;Canino;Pitbull;25/05/2018;69049934137
+10;Zico;Bovino;Holandes;15/02/2017;18638315171

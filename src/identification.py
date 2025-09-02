@@ -60,7 +60,7 @@ def finalizar_programa():
 def clear():
     os.system("cls")
 
-file = os.getcwd().replace("\\", "/") + "/archives/data/users.csv"
+file = os.getcwd().replace("\\", "/") + "/data/users.csv"
 
 def auth():
     progress = True

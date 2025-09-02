@@ -18,11 +18,11 @@ def menu_atendimentos():
     panel = Panel(Align('ATENDIMENTOS', align='center'), width=60, box=box.DOUBLE_EDGE, style='bold red')
     console.print(panel)
 
-file_clients = os.getcwd().replace("\\", "/") + "/archives/data/clientes.csv"
-file_users = os.getcwd().replace("\\", "/") + "/archives/data/users.csv"
-file_services = os.getcwd().replace("\\", "/") + "/archives/data/servicos.csv"
-file_pets = os.getcwd().replace("\\", "/") + "/archives/data/pets.csv"
-file_atendimentos = os.getcwd().replace("\\", "/") + "/archives/data/atendimentos.csv"
+file_clients = os.getcwd().replace("\\", "/") + "/data/clientes.csv"
+file_users = os.getcwd().replace("\\", "/") + "/data/users.csv"
+file_services = os.getcwd().replace("\\", "/") + "/data/servicos.csv"
+file_pets = os.getcwd().replace("\\", "/") + "/data/pets.csv"
+file_atendimentos = os.getcwd().replace("\\", "/") + "/data/atendimentos.csv"
 
 def iniciar_atendimento():
     console = Console()

@@ -1,0 +1,11 @@
+nome;sexo;cpf;celular;email;codigo_end_postal;endereco;bairro;complemento;cidade;estado
+Ana Souza Lima;Feminino;18638315171;61986557551;anasouzalima@gmail.com;01001-000;Praca da Se - lado impar;Se;;Sao Paulo;SP
+Bruno Pereira Costa;Masculino;99352710134;61986557551;brunopereiracosta@gmail.com;20040-020;Praca Pio X - lado impar;Centro;;Rio de Janeiro;RJ
+Camila Rocha Almeida;Feminino;90693651113;61986557551;camilarochaalmeida@gmail.com;30120-040;Rua dos Guaranis - lado par;Centro;;Belo Horizonte;MG
+Daniel Siva Santos;Masculino;02578121133;61986557551;danielsilvasantos@gmail.com;40301-010;Boulevard Seara;Barbalho;;Salvador;BA
+Elisa Martins Ferreira;Feminino;08850436181;61986557551;elisamartinsferreira@gmail.com;40060-090;Rua Augusto Franca;Dois de Julho;;Salvador;BA
+Felipe Oliveira Mendes;Masculino;07051205110;61986557551;felipeoliveiramendes@gmail.com;69005-050;Rua Marques de Santa Cruz;Centro;;Manaus;AM
+Gabriela Lima Costa;Feminino;76762538100;61986557551;gabrielalimacosta@gmail.com;81010-020;Rua Jamaica;Lindoia;;Curitiba;PR
+Henrique Barbosa Silva;Masculino;10225279169;61986557551;henriquebarbosasilva@gmail.com;60330-410;Rua Aquarius;Barra do Ceara;;Fortaleza;CE
+Isabel Santos Pereira;Feminino;69049934137;61986557551;isabelsantospereira@gmail.com;51110-000;Avenida Antonio de Goes - lado impar;Pina;;Recife;PE
+Joao Carlos Oliveira;Masculino;78839905197;61986557551;joaocarlosoliveira@gmail.com;90160-170;Praca Cinquentenario da Radio Gaucha;Menino Deus;;Porto Alegre;RS

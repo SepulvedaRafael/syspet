@@ -1,0 +1,4 @@
+id_servico;id_pet;data_atendimento;data_agendamento;data_conclusao;situacao
+2;1;15/11/2024;20/11/2024;;Cancelado
+3;4;15/11/2024;19/11/2024;;Remarcado
+6;5;15/11/2024;17/11/2024;15/11/2024;Efetivado

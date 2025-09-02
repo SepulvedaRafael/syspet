@@ -12,7 +12,11 @@ from email.mime.text import MIMEText
 import brazilcep
 
 # DATA
+import os
 from datetime import datetime
+from dotenv import load_dotenv
+
+load_dotenv()
 
 def isnome(self):
     if(len(self) != ''):
@@ -65,8 +69,8 @@ def iscpf(self):
 def iscelular(self):
     self = str(self)
     if len(self) == 11:
-        account_sid = "ACa624bd6725dc418bb5bbb8279cb23e63"
-        auth_token = "89cc3e466d137ff7b8bae40cdcddfd21"
+        account_sid = os.getenv("SID_TWILIO")
+        auth_token = os.getenv("AUTH_TOKEN_TWILIO")
 
         cliente = Client(account_sid, auth_token)
 
@@ -74,7 +78,7 @@ def iscelular(self):
             code = randint(100000, 999999)
             print(code)
             cliente.messages.create(
-                from_="+12569523515",
+                from_=os.getenv("NUMBER_TWILIO"),
                 to=f"+55{int(self)}",
                 body=f"""
 					Mensagem de confirmação
@@ -101,8 +105,8 @@ def isemail(self):
         # Setup email remetente + senha
         smtp_server = "smtp.gmail.com"
         smtp_port = 587
-        remetente = "shadow83951@gmail.com"
-        senha_remetente = "xuuy qhnf mshs zbtt"
+        remetente = os.getenv("REMETENTE_EMAIL")
+        senha_remetente = os.getenv("REMETENTE_PASSWORD")
 
         # Mensagem
         msg = MIMEMultipart()
