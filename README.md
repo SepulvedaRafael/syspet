@@ -13,7 +13,7 @@ Aqui foi possível entender mais sobre a criação de interfaces **CRUD** - *Cre
 Apesar de faltar vários mecanismos de segurança e implementações necessárias para torná-lo um projeto pessoal técnico, foi uma das melhores experiências de aprendizagem que me propus a dedicar meu tempo e entender profundamente cada estrutura para resolver o problema proposto.
 
 ## 💻 Pré-requisitos
-Para adiantar uma etapa, antes de iniciar o curso, verifique se você possui todos os requisitos:
+Para testar esse projeto, verifique se você possui todos os requisitos:
 
 - Você possui instalado uma versão estável da linguagem `python`.
 - Você possui instalado um ambiente de desenvolvimento, como `Visual Studio Code` ou outro de sua preferência.
