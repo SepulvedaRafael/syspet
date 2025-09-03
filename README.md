@@ -17,7 +17,8 @@ Para testar esse projeto, verifique se você possui todos os requisitos:
 
 - Você possui instalado uma versão estável da linguagem `python`.
 - Você possui instalado um ambiente de desenvolvimento, como `Visual Studio Code` ou outro de sua preferência.
-- Certifique-se de possuir todas as dependências que coincidirem com a sua opção de estudo. Caso contrário, verifique a seção `🚀 Instalando as dependências`.
+- Certifique-se de a dependência necessária. Caso contrário, verifique a seção `🚀 Instalando as dependências`.
+
 
 ## 🚀 Instalando as dependências
 O Syspet utiliza algumas dependências que são fundamentais para o seu funcionamento, por isso certifique-se de instalar cada uma delas para que o programa funcione normalmente.
